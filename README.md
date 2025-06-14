@@ -72,11 +72,34 @@ Mencatat jumlah stok yang tersedia untuk setiap produk.
     ```
 
 3.  **Setup Database:**
-    * Buat database baru di sistem SQL anda atau copy dari folder database di repository ini.
-    * Import file `.sql` yang berisi struktur tabel dan data awal (jika ada).
-    * Konfigurasi koneksi database di dalam file `.env`.
+   
+    ⚠️ File `.sql` berada di folder `database`.
 
-4.  **Jalankan aplikasi:**
+    ⚠️ Konfigurasi koneksi database di dalam file `.env`.
+
+    ##### 1️⃣ Dengan Command Line (CMD/Terminal)
+    * ```mysql -u [username] -p [nama_database] < [lokasi_file].sql```
+    * Tekan enter.
+
+    ##### 2️⃣ Menggunakan MySQL Workbench
+    * Buka MySQL Workbench.
+    * Hubungkan ke server database.
+    * Klik menu File > Open SQL Script → pilih file .sql.
+    * Setelah terbuka di editor, klik ikon `Execute` 
+
+    ##### 3️⃣ Menggunakan phpMyAdmin
+    * Buka phpMyAdmin lewat browser (biasanya localhost/phpmyadmin).
+    * Pilih atau buat database yang akan diimpor.
+    * Klik tab `Import`.
+    * Klik `Choose File`, lalu pilih file `.sql`.
+    * Pastikan format file adalah SQL → klik `Go`.
+    * Tunggu sampai proses selesai.
+
+    ##### 👉 (Opsional)
+    * Membuat database baru
+    
+
+5.  **Jalankan aplikasi:**
     ```bash
     node app.js
     ```
