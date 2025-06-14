@@ -26,7 +26,7 @@ Mencatat semua transaksi pembelian yang dilakukan.
 | status            | enum('BERHASIL','DIBATALKAN') | NO   |     | BERHASIL          |                   |
 | tanggal_pembelian | timestamp                     | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
 
-### 📦 **Produk**
+### 📦 **Tabel `Produk`**
 
 Menyimpan informasi detail mengenai produk yang dijual.
 
@@ -37,7 +37,7 @@ Menyimpan informasi detail mengenai produk yang dijual.
 | harga       | decimal(10,2) | NO   |     | NULL              |                   |
 | created_at  | timestamp     | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
 
-### 🛒 **Stock_Produk**
+### 🛒 **Tabel `Stock_Produk`**
 
 Mencatat jumlah stok yang tersedia untuk setiap produk.
 
@@ -84,7 +84,7 @@ Mencatat jumlah stok yang tersedia untuk setiap produk.
     ##### 2️⃣ Menggunakan MySQL Workbench
     * Buka MySQL Workbench.
     * Hubungkan ke server database.
-    * Klik menu File > Open SQL Script → pilih file .sql.
+    * Klik menu File → Open SQL Script → pilih file .sql.
     * Setelah terbuka di editor, klik ikon `Execute` 
 
     ##### 3️⃣ Menggunakan phpMyAdmin
