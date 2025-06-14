@@ -68,7 +68,7 @@ Mencatat jumlah stok yang tersedia untuk setiap produk.
 
 2.  **Install dependencies:**
     ```bash
-    npm install
+    npm install express ejs mysql2 body-parser dotenv
     ```
 
 3.  **Setup Database:**
@@ -97,7 +97,6 @@ Mencatat jumlah stok yang tersedia untuk setiap produk.
 
     ##### 👉 (Opsional)
     * Membuat database baru
-    
 
 5.  **Jalankan aplikasi:**
     ```bash
